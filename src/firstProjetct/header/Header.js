@@ -6,7 +6,7 @@ import './header.css';
 const Header = () => {
   return (
    <div className="mainHeader">
-   <div className="logo">Neutroline</div>
+   <div className="logo">Neutro</div>
     <nav>
     <input type="checkbox" id="check"/>
      <label htmlFor="check" className="checkBtn">
