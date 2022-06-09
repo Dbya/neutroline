@@ -1,52 +1,62 @@
-.mainHeader{
+nav{
+    position: fixed;
+    height: 100px;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0 5%;
+    background-color: rgb(185, 185, 62);
+}
+nav .logo{
+    float: left;
+    width: 20%;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
-    background-color: rgba(194, 165, 165, 0.911);
-    color: rgb(87, 34, 34);
-}
-.logo{
-    font-family: 'Tai Heritage Pro', serif;
-    cursor: pointer;
+    color: aliceblue;
+    font-size: 24px;
     font-weight: bold;
-    font-size: 30px;
-}
-.navList{
-    list-style: none;
-}
-.navList li{
-    display: inline-block;
-    padding: 8px 20px;
-    font-size: 20px;
-  
     
 }
-.navList li a{
+nav .navList{
+    float: left;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+nav .login{
+    float: right;
+   width: 10%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.login .buttonL{
+    margin-right: 20px;
+}
+nav .navList li{
+    list-style: none;
+}
+nav .navList a{
+    display: block;
     text-decoration: none;
-    color:rgb(59, 20, 20) ;
+   padding: 1rem;
+    font-size: 20px;
+    /* background-color: rgb(195, 195, 81); */
+    color: brown;
+    /* border-radius: 20px; */
 }
-.navList li a:hover{
-    color: rgb(14, 14, 15);
-    font-size: large;
-    font-weight: bold
+nav .navList a:hover{
+font-size: 21px;
+/* background-color: bisque; */
+font-weight: bold;
+color: rgb(163, 177, 188);
 }
-
-/* .buttons a{
- text-decoration: none;
-}
-.button{
-    border: none;
-    cursor: pointer;
-    padding:8px 8px;
-    background-color: green;
-   border-radius: 2rem;
-}
-button:hover{
-    background-color: brown;
-
-} */
-a button{
+.login button{
     padding:10px 20px;
     background-color: rgb(25, 122, 62);
     border: none;
@@ -56,25 +66,45 @@ a button{
     font-weight: bold;
     color: azure;
 }
-a button:hover{
-    padding:15px 22px;
-    background-color: aliceblue;
-    color: rgb(88, 11, 11);
-    border-radius: 40px;
+.login button:hover{
+    color: blanchedalmond;
+    background-color: rgb(95, 29, 29);
 }
-.checkBtn{
-    color: white;
-    font-size: 30px;
+nav .icon{
     float: right;
-    margin-right: 50px;
+    width: 10%;
+    display: flex;
+   align-items: center;
+   right: 5%;
+   top: 50%;
     display: none;
 }
-#check{
-    display: none;
-}
-@media (max-width:980px){
-    .logo{
-        
-    }
-    
+@media screen and (max-width:980px){
+       nav .navList{
+           float: none;
+           position: fixed;
+           left: 0;
+           right: 0;
+           top:100px;
+           bottom: 0;
+           flex-direction: column;
+           background-color: beige;
+       }
+       nav .login{
+           float: none;
+           position:fixed;
+           left: 0;
+           right: 0;
+           /* top:100px; */
+           /* flex-direction: column; */
+       }
+       nav .icon{
+        display: block;
+        margin-top: 9%;
+        font-size: 20px;
+        color: white;
+      }
+       nav:checked ~ .navList{
+          bottom: 0;
+      }
 }

@@ -6,23 +6,21 @@ import './header.css';
 const Header = () => {
   return (
    <div className="mainHeader ">
-   <div className="logo">neutroLine</div>
-    <nav>
-    <input type="checkbox" id="check"/>
-     <label htmlFor="check" className="checkBtn">
-     <i className='fas fa-bars'></i></label>
+   <nav>
+   <input type="checkbox" id="check" />
+   <div className="logo">NeutroLine</div>
     <ul className="navList">
     <li><a href="">Features</a> </li>
     <li><a href="">Company </a> </li>
     <li><a href="">Carrer</a> </li>
     <li><a href="">About</a> </li>
     </ul>
-    </nav>
-    <div className="">
+    <div className="login">
     <a href="/ " className="buttonL"> <button>Login</button> </a>
     <a href=" /" className="buttonR"> <button>Register</button> </a>
    </div>
-  
+   <label htmlFor="check" className='icon'><i className='fas fa-align-justify'></i></label>
+   </nav>
    </div>
   )
 }
