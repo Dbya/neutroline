@@ -5,7 +5,7 @@ import './header.css';
 
 const Header = () => {
   return (
-   <div className="mainHeader">
+   <div className="mainHeader ">
    <div className="logo">neutroLine</div>
     <nav>
     <input type="checkbox" id="check"/>
